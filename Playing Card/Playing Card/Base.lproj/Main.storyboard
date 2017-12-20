@@ -4,7 +4,9 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,120 +19,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOn-4g-xll" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="50" y="97" width="69" height="126"/>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="fOn-4g-xll" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
+                                <rect key="frame" x="16" y="136.66666666666669" width="343" height="548.66666666666652"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="fOn-4g-xll" secondAttribute="height" multiplier="5:8" id="Qh6-ch-gUh"/>
                                     <constraint firstAttribute="width" priority="750" constant="800" id="vup-EZ-df9"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGZ-1u-vsv" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="171" y="69" width="69" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="60Z-Iz-QeU"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Nd-uU-UAJ" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="281" y="111" width="69" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="Rh2-sP-29U"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aEa-g0-VvQ" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="72" y="251" width="69" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="WVc-9d-zSQ"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TcH-9a-2WW" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="182" y="251" width="69" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="hdB-bh-j9E"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYp-7h-uT6" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="281" y="251" width="69" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="rai-GH-4bF"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FuS-fZ-X16" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="50" y="402" width="69" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="xU9-tS-NS8"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F21-yp-Fyk" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="153" y="438" width="69" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="kdd-7Z-kU9"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3xc-85-a6O" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="250" y="413" width="69" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="VYF-JF-pCe"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5n-hP-Cp6" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="72" y="586" width="69" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="U4n-3B-IcN"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wTc-qA-7Ln" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="182" y="605" width="69" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="Jgh-mX-CvR"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mmn-Wo-KHR" customClass="PlayingCardView" customModule="Playing_Card" customModuleProvider="target">
-                                <rect key="frame" x="281" y="586" width="69" height="126"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="800" id="Pv1-Gd-6G9"/>
-                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1KR-7D-eyd" appends="YES" id="lbn-rC-eqb"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fOn-4g-xll" secondAttribute="bottom" constant="16" id="1bU-Nz-UKn"/>
+                            <constraint firstItem="fOn-4g-xll" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9vm-2I-SSr"/>
+                            <constraint firstItem="fOn-4g-xll" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Kfo-az-CcL"/>
+                            <constraint firstItem="fOn-4g-xll" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="QiR-2P-dvE"/>
+                            <constraint firstItem="fOn-4g-xll" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bEq-51-ye9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fOn-4g-xll" secondAttribute="trailing" constant="16" id="s5S-7r-wSH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="playingCardView" destination="fOn-4g-xll" id="Upb-7f-fJi"/>
-                        <outletCollection property="cardViews" destination="mmn-Wo-KHR" collectionClass="NSMutableArray" id="BFI-Lr-QWN"/>
-                        <outletCollection property="cardViews" destination="wTc-qA-7Ln" collectionClass="NSMutableArray" id="Xf0-md-tu3"/>
-                        <outletCollection property="cardViews" destination="H5n-hP-Cp6" collectionClass="NSMutableArray" id="fyQ-sQ-avI"/>
-                        <outletCollection property="cardViews" destination="3xc-85-a6O" collectionClass="NSMutableArray" id="ZL8-Ga-N3w"/>
-                        <outletCollection property="cardViews" destination="F21-yp-Fyk" collectionClass="NSMutableArray" id="nVB-Kt-qVx"/>
-                        <outletCollection property="cardViews" destination="FuS-fZ-X16" collectionClass="NSMutableArray" id="GaD-PV-ovm"/>
-                        <outletCollection property="cardViews" destination="cYp-7h-uT6" collectionClass="NSMutableArray" id="qtK-68-geb"/>
-                        <outletCollection property="cardViews" destination="TcH-9a-2WW" collectionClass="NSMutableArray" id="EVr-6z-JRm"/>
-                        <outletCollection property="cardViews" destination="aEa-g0-VvQ" collectionClass="NSMutableArray" id="Kw9-tk-ISW"/>
-                        <outletCollection property="cardViews" destination="1Nd-uU-UAJ" collectionClass="NSMutableArray" id="fp6-QM-OjB"/>
-                        <outletCollection property="cardViews" destination="CGZ-1u-vsv" collectionClass="NSMutableArray" id="cYp-QD-XO7"/>
-                        <outletCollection property="cardViews" destination="fOn-4g-xll" collectionClass="NSMutableArray" id="f5e-g6-ZE3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
