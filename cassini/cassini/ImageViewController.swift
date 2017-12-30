@@ -12,10 +12,21 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
 
     var imageURL: URL?{
         didSet{
-            imageView.image = nil
+            image = nil
             if view.window != nil{
                 fetchImage()
             }
+        }
+    }
+    var image: UIImage? {
+        get {
+            return imageView.image
+        }
+        set {
+            imageView.image = newValue
+            imageView.sizeToFit()
+            scrollView?.contentSize = imageView.frame.size
+            spinner?.stopAnimating()
         }
     }
     @IBOutlet weak var scrollView: UIScrollView!{
@@ -23,6 +34,7 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
             scrollView.minimumZoomScale = 1/25
             scrollView.maximumZoomScale = 1.0
             scrollView.delegate = self
+            scrollView.addSubview(imageView)
         }
     }
     
@@ -32,13 +44,19 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
                 fetchImage()
             }
     }
-    @IBOutlet weak var imageView: UIImageView!
-   
+    var imageView = UIImageView()
+
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     private func fetchImage(){
         if let url = imageURL{
-            let urlContents = try? Data(contentsOf: url)
-            if let imageData = urlContents{
-                imageView.image = UIImage(data: imageData)
+            spinner.startAnimating()
+            DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+                let urlContents = try? Data(contentsOf: url)
+                DispatchQueue.main.async {
+                    if let imageData = urlContents, url==self?.imageURL{
+                        self?.imageView.image = UIImage(data: imageData)
+                    }
+                }
             }
         }
     }
@@ -48,12 +66,9 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if imageURL == nil{
-            imageURL = DemoURLs.stanford
-            scrollView.minimumZoomScale = 1/25
-            scrollView.maximumZoomScale = 1.0
-            scrollView.delegate = self
-        }
+//        if imageURL == nil{
+//            imageURL = DemoURLs.stanford
+//        }
     }
 }
 
