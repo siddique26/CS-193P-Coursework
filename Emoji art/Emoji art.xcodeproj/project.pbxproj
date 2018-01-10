@@ -13,6 +13,7 @@
 		1B0EF6171FFBBF0A007476CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B0EF6161FFBBF0A007476CA /* Assets.xcassets */; };
 		1B0EF61A1FFBBF0A007476CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0EF6181FFBBF0A007476CA /* LaunchScreen.storyboard */; };
 		1B0EF6231FFBC01C007476CA /* EmojiArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EF6221FFBC01C007476CA /* EmojiArtView.swift */; };
+		1B21EAD020063C8100F86F61 /* EmojiArtView+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21EACF20063C8100F86F61 /* EmojiArtView+Gestures.swift */; };
 		1B4787132003D25E00408739 /* EmojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4787122003D25E00408739 /* EmojiCollectionViewCell.swift */; };
 		1B4B619F2001E50600AE56C9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B619E2001E50600AE56C9 /* Utilities.swift */; };
 		1B4B61A12002110500AE56C9 /* EmojiArtDocumentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B61A02002110500AE56C9 /* EmojiArtDocumentTableViewController.swift */; };
@@ -27,6 +28,7 @@
 		1B0EF6191FFBBF0A007476CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B0EF61B1FFBBF0A007476CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B0EF6221FFBC01C007476CA /* EmojiArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtView.swift; sourceTree = "<group>"; };
+		1B21EACF20063C8100F86F61 /* EmojiArtView+Gestures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EmojiArtView+Gestures.swift"; sourceTree = "<group>"; };
 		1B4787122003D25E00408739 /* EmojiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewCell.swift; sourceTree = "<group>"; };
 		1B4B619E2001E50600AE56C9 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		1B4B61A02002110500AE56C9 /* EmojiArtDocumentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentTableViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				1B4787122003D25E00408739 /* EmojiCollectionViewCell.swift */,
 				1B0EF6111FFBBF0A007476CA /* EmojiArtViewController.swift */,
 				1B4B61A02002110500AE56C9 /* EmojiArtDocumentTableViewController.swift */,
+				1B21EACF20063C8100F86F61 /* EmojiArtView+Gestures.swift */,
 				1B0EF6131FFBBF0A007476CA /* Main.storyboard */,
 				1B0EF6221FFBC01C007476CA /* EmojiArtView.swift */,
 				1B4B619E2001E50600AE56C9 /* Utilities.swift */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0EF6121FFBBF0A007476CA /* EmojiArtViewController.swift in Sources */,
+				1B21EAD020063C8100F86F61 /* EmojiArtView+Gestures.swift in Sources */,
 				1B4787132003D25E00408739 /* EmojiCollectionViewCell.swift in Sources */,
 				1B0EF6101FFBBF0A007476CA /* AppDelegate.swift in Sources */,
 				1B4B619F2001E50600AE56C9 /* Utilities.swift in Sources */,
