@@ -9,5 +9,6 @@
 import UIKit
 
 class EmojiCollectionViewCell: UICollectionViewCell {
+    //Label for CollectionView
     @IBOutlet weak var label: UILabel!
 }
